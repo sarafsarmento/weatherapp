@@ -1,4 +1,110 @@
 h1 {
+  color: #25b2a8;
+}
+
+h3 {
   text-align: center;
-  color: blue;
+}
+
+p {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  background-color: #20948c;
+  color: #ffffff;
+  border: 1px solid #20948c;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:active,
+:visited {
+  color: #20948c;
+}
+
+.day {
+  margin: 50px auto;
+}
+
+.cloud-iconbig {
+  font-size: 150px;
+  color: #25b2a8;
+  display: block;
+  text-align: center;
+}
+
+.cloud-iconsmall {
+  font-size: 30px;
+  color: #25b2a8;
+  display: block;
+  text-align: center;
+}
+
+.rain-icon {
+  font-size: 30px;
+  color: #25b2a8;
+  display: block;
+  text-align: center;
+}
+
+.showers-icon {
+  font-size: 30px;
+  color: #25b2a8;
+  display: block;
+  text-align: center;
+}
+
+.search-icon {
+  color: #25b2a8;
+  font-size: 20px;
+}
+
+.searchbar {
+  text-align: center;
+  color: #25b2a8;
+  width: 200px;
+  border: 1px solid #ffffff;
+  border-bottom: 5px solid #25b2a8;
+  font-size: 20px;
+}
+
+.searchbar:hover {
+  border: 1px solid #ffffff;
+  border-bottom: 5px solid #25b2a8;
+}
+
+.search {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-primary:active {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.container-day {
+  margin: 50px 50px auto;
+}
+
+.container-temp {
+  margin-right: 50px;
 }
