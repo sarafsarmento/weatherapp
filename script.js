@@ -18,8 +18,6 @@ function search(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-//
-
 function handlePosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
@@ -45,8 +43,6 @@ function loadTemperature() {
 }
 let button = document.querySelector("#current");
 button.addEventListener("click", loadTemperature);
-
-//
 
 let now = new Date();
 
