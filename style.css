@@ -1,9 +1,22 @@
 h1 {
-  color: #25b2a8;
+  color: #ffffff;
+  display: block;
+  text-align: left;
+}
+
+h2 {
+  display: block;
+  text-align: left;
 }
 
 h3 {
-  text-align: center;
+  display: block;
+  text-align: left;
+}
+
+h4 {
+  display: block;
+  text-align: left;
 }
 
 p {
@@ -14,18 +27,74 @@ p {
 
 button {
   text-align: center;
-  background-color: #20948c;
+  background-color: #a18cd1;
   color: #ffffff;
-  border: 1px solid #20948c;
+  border: 1px solid #a18cd1;
   font-size: 15px;
   font-weight: bold;
   padding: 10px 15px 10px 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#weather-data {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+}
+
+#weather-data-temperature {
+  display: block;
+  text-align: center;
+}
+
+#location {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+}
+
+#weekday {
+  display: block;
+  text-align: center;
+}
+
+#weekly-icons {
+  display: block;
+  text-align: center;
+  margin: auto auto 10px;
+}
+
+#temperature {
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+}
+
+#current {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#daily-temperature {
+  text-align: center;
+  margin: 30px auto;
+}
+
+#convert {
+  display: block;
+  text-align: right;
+}
+
+#search-form {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
 a:active,
 :visited {
-  color: #20948c;
+  color: #ffffff;
 }
 
 .day {
@@ -34,77 +103,67 @@ a:active,
 
 .cloud-iconbig {
   font-size: 150px;
-  color: #25b2a8;
+  color: #ffffff;
   display: block;
   text-align: center;
 }
 
 .cloud-iconsmall {
   font-size: 30px;
-  color: #25b2a8;
+  color: #a58ed2;
   display: block;
   text-align: center;
 }
 
 .rain-icon {
   font-size: 30px;
-  color: #25b2a8;
+  color: #a58ed2;
   display: block;
   text-align: center;
 }
 
 .showers-icon {
   font-size: 30px;
-  color: #25b2a8;
+  color: #a58ed2;
   display: block;
   text-align: center;
 }
 
 .search-icon {
-  color: #25b2a8;
+  color: #ffffff;
   font-size: 20px;
 }
-
-.searchbar {
-  text-align: center;
-  color: #25b2a8;
-  width: 200px;
-  border: 1px solid #ffffff;
-  border-bottom: 5px solid #25b2a8;
+.md-form {
+  color: #a58ed2;
+  width: 200px !important;
+  border: transparent !important;
+  border-bottom: 5px solid #a18cd1 !important;
   font-size: 20px;
+  background-color: transparent !important;
 }
 
-.searchbar:hover {
-  border: 1px solid #ffffff;
-  border-bottom: 5px solid #25b2a8;
+.md-form:active,
+:visited,
+:focus,
+:hover {
+  border: transparent !important;
+  background-color: transparent !important;
 }
 
-.search {
+.btn-primary,
+.hover,
+.active,
+.visited {
+  background-color: #a18cd1 !important;
+  border: 1px solid #a18cd1 !important;
+}
+
+.weather-container {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
   display: block;
   text-align: center;
-  margin: 20px auto;
-  background-color: #ffffff;
-}
-
-.btn-primary {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.btn-primary:hover {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.btn-primary:active {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.container-day {
-  margin: 50px 50px auto;
-}
-
-.container-temp {
-  margin-right: 50px;
+  max-width: 700px;
+  padding: 20px 16px 24px 16px;
 }

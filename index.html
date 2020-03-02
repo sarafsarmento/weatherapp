@@ -18,43 +18,34 @@
   </head>
 
   <body>
-    <div class="search">
-      <form class="search-form" id="search-form">
-        <input
-          type="search"
-          id="city-input"
-          placeholder="Type a city"
-          class="searchbar"
-          autofocus="off"
-        />
-        <button type="submit" class="btn btn-primary" value="search">
-          <i class="fas fa-search search-icon"></i>
-        </button>
-
-        <button id="current">
-          Current
-        </button>
-      </form>
-    </div>
-    <div class="container-day">
+    <div class="weather-container">
       <div class="row">
-        <div class="col-sm">
-          <h1 id="city">Lisbon</h1>
-          <h2>
-            Wednesday 21:06
-          </h2>
-          <h4>Cloudy</h4>
+        <div class="col-6">
+         <div class="md-form mt-0">
+            <input class="form-control" type="text" placeholder="Type a city" aria-label="Search" />
+            <button type="submit" class="btn btn-primary" value="search">
+              <i class="fas fa-search search-icon"></i></button>
+          </form>
+        </div>
+
+        <div class="col-6">
+          <button id="current">
+            Current Location
+          </button>
         </div>
       </div>
-    </div>
-    <div class="container-temp">
+
       <div class="row">
-        <div class="col-sm">
+        <div class="col-6" id="location">
+          <h1 id="city">Lisbon</h1>
+          <h2>Wednesday 21:06</h2>
+          <h4>Cloudy</h4>
+        </div>
+
+        <div class="col-6" id="weather-data">
           <i class="fas fa-cloud cloud-iconbig"></i>
-          <h3 id="temperature">
+          <h3 id="weather-data-temperature">
             9º
-          </h3>
-          <h3 id="convert">
             <a href="#" id="celsius">C</a> |
             <a href="#" id="fahrenheit">F</a>
           </h3>
@@ -68,58 +59,64 @@
         </div>
       </div>
     </div>
-    <div class="container-week">
-      <div class="row">
-        <div class="col-sm">
-          <h3>Thu</h3>
-          <i class="fas fa-cloud-showers-heavy showers-icon"></i>
-          <p>
-            13ºC|8 ºF
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Fri</h3>
-          <i class="fas fa-cloud-rain rain-icon"></i>
-          <p>
-            14ºC|8ºF
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Sat</h3>
-          <i class="fas fa-cloud cloud-iconsmall"></i>
-          <p>
-            14ºC|8ºF
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Sun</h3>
-          <i class="fas fa-cloud cloud-iconsmall"></i>
-          <p>
-            16ºC|12ºF
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Mon</h3>
-          <i class="fas fa-cloud cloud-iconsmall"></i>
-          <p>
-            16ºC|13ºF
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Tue</h3>
-          <i class="fas fa-cloud-rain rain-icon"></i>
-          <p>
-            16ºC|11ºF
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Wed</h3>
-          <i class="fas fa-cloud cloud-iconsmall"></i>
-          <p>
-            16ºC|9ºF
-          </p>
-        </div>
+
+    <div class="row" id="daily-temperature">
+      <div class="col-1"></div>
+
+      <div class="col-1">
+        <h3 id="weekday">Thu</h3>
+        <i
+          class="fas fa-cloud-showers-heavy showers-icon"
+          id="weekly-icons"
+        ></i>
+        <p>
+          13ºC|8 ºF
+        </p>
       </div>
+
+      <div class="col-1"></div>
+
+      <div class="col-1">
+        <h3 id="weekday">Fri</h3>
+        <i class="fas fa-cloud-rain rain-icon" id="weekly-icons"></i>
+        <p>
+          14ºC|8ºF
+        </p>
+      </div>
+
+      <div class="col-1"></div>
+
+      <div class="col-1">
+        <h3 id="weekday">Sat</h3>
+        <i class="fas fa-cloud cloud-iconsmall" id="weekly-icons"></i>
+        <p>
+          14ºC|8ºF
+        </p>
+      </div>
+
+      <div class="col-1"></div>
+
+      <div class="col-1">
+        <h3 id="weekday">Sun</h3>
+        <i class="fas fa-cloud cloud-iconsmall" id="weekly-icons"></i>
+        <p>
+          16ºC|12ºF
+        </p>
+      </div>
+
+      <div class="col-1"></div>
+
+      <div class="col-1">
+        <h3 id="weekday">Mon</h3>
+        <i class="fas fa-cloud cloud-iconsmall" id="weekly-icons"></i>
+        <p>
+          16ºC|13ºF
+        </p>
+      </div>
+
+      <div class="col-1"></div>
+
+      <div class="col-1"></div>
     </div>
 
     <script src="script.js"></script>
