@@ -84,6 +84,11 @@ input:focus {
   margin: 50px auto 10px;
 }
 
+#repository {
+  display: block;
+  text-align: center;
+}
+
 #weekday {
   display: block;
   text-align: center;
