@@ -31,7 +31,7 @@ h4 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 12px;
   display: block;
   text-align: center;
 }
@@ -44,26 +44,14 @@ button {
   font-weight: bold;
 }
 
-input {
-  display: block;
-  text-align: center !important;
+::placeholder {
   color: #ffffff !important;
-  font-weight: 600 !important;
-  font-size: 20px !important;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
-  background-color: transparent !important;
-  max-width: 550px !important;
-  border: transparent !important;
-  border-bottom: 5px solid #a18cd1 !important;
+  opacity: 1 !important;
 }
 
-input:focus {
-  outline: 5px solid #a18cd1 !important;
-  opacity: 50%;
-  transition: ease-in 1s;
-  border-bottom: 5px solid #a18cd1 !important;
-  background-color: transparent !important;
+::placeholder:focus {
   color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 #weather-data {
@@ -108,7 +96,7 @@ input:focus {
 
 #current {
   text-align: right;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #current-button {
