@@ -44,16 +44,6 @@ button {
   font-weight: bold;
 }
 
-::placeholder {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-::placeholder:focus {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
 #weather-data {
   display: block;
   text-align: center;
