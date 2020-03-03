@@ -18,31 +18,43 @@
   </head>
 
   <body>
-    <div class="weather-container">
+    <div class="weather-container" id="weather-container">
       <div class="row">
-        <div class="col-6">
-         <div class="md-form mt-0">
-            <input class="form-control" type="text" placeholder="Type a city" aria-label="Search" />
+        <div class="col-8">
+          <form class="md-form" id="search-city">
+            <input
+              class="form-control"
+              id="city-input"
+              type="text"
+              placeholder="Type a city"
+              aria-label="Search"
+              autofocus="off"
+            />
+            </div>
+             <div class="col-1">
             <button type="submit" class="btn btn-primary" value="search">
-              <i class="fas fa-search search-icon"></i></button>
-          </form>
+              <i class="fas fa-search search-icon"></i>
+            </button>
+            </form>
         </div>
 
-        <div class="col-6">
-          <button id="current">
+        <div class="col-3" id="current">
+          <button id="current-button">
             Current Location
           </button>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-6" id="location">
+        <div class="col-3"></div>
+
+        <div class="col-3" id="location">
           <h1 id="city">Lisbon</h1>
           <h2>Wednesday 21:06</h2>
           <h4>Cloudy</h4>
         </div>
 
-        <div class="col-6" id="weather-data">
+        <div class="col-3" id="weather-data">
           <i class="fas fa-cloud cloud-iconbig"></i>
           <h3 id="weather-data-temperature">
             9º
@@ -57,10 +69,12 @@
             Wind: 16 km/h
           </p>
         </div>
-      </div>
-    </div>
 
-    <div class="row" id="daily-temperature">
+        <div class="col-3"></div>
+      </div>
+   
+
+    <div class="row">
       <div class="col-1"></div>
 
       <div class="col-1">
@@ -70,7 +84,7 @@
           id="weekly-icons"
         ></i>
         <p>
-          13ºC|8 ºF
+          13ºC|8ºF
         </p>
       </div>
 

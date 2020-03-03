@@ -11,11 +11,11 @@ function search(event) {
   }
 
   let city = cityInput.value;
-  let apiKey = "a17a18dcaf1b3015a8ae057fbdda325d";
+  let apiKey = "6a0a99fe1a7b6c33c3a6641707ad73c7";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(url).then(showResponse);
 }
-let searchForm = document.querySelector("#search-form");
+let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", search);
 
 function handlePosition(position) {
@@ -41,7 +41,7 @@ function loadTemperature() {
   navigator.geolocation.getCurrentPosition(handlePosition);
   event.preventDefault();
 }
-let button = document.querySelector("#current");
+let button = document.querySelector("#current-button");
 button.addEventListener("click", loadTemperature);
 
 let now = new Date();
