@@ -85,6 +85,7 @@ input:focus {
 }
 
 #repository {
+  margin: 20px auto;
   display: block;
   text-align: center;
 }
